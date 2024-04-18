@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            
+            display:flex;
+            justify-content: center;
+            margin-top: 5%;
+            /* text-align: center; */
+            background-image: url("/static/nature.jpg");
+            background-repeat: no-repeat;
+           
+            color: antiquewhite;
+        }
+        .main{
+            border: 3px solid rgb(231, 245, 167);
+            
+            width: 20%;
+            /* margin-right:2%; */
+            padding-left: 10%;
+            background-color: rgb(113, 216, 194);
+            background: transparent;
+
+        }
+        label,input{
+            
+            display:flex;
+        }
+        button{
+            margin-left: 50px;
+            margin-bottom: 3%;
+        }
+        input:focus{
+            color: rgb(21, 22, 21);
+        }
+        h2{
+            margin:40px;
+        }
+        a{
+            margin-left: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Login</h2>
+        
+        <form action="/template" method="post">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" required><br>
+            <button id="submit">Submit</button>
+            <p>Register account <a href="/">Signup</a></p>
+        </form>
+    </div>
+    
+</body>
+</html>
